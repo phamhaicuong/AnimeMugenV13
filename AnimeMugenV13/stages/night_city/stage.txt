@@ -1,0 +1,3 @@
+name=Night City
+sky=0B0B2A
+ground=2B2B3B

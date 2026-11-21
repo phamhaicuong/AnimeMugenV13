@@ -1,0 +1,5 @@
+name=Orange Fighter
+color=FF8A1E
+hp=1000
+power=10
+speed=3

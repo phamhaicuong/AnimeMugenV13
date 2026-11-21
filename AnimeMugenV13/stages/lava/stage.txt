@@ -1,0 +1,3 @@
+name=Lava Pit
+sky=5A1008
+ground=3A0A05

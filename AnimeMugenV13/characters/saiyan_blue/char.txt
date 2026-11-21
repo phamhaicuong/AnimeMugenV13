@@ -1,0 +1,5 @@
+name=Blue Saiyan
+color=2E9BFF
+hp=900
+power=12
+speed=3

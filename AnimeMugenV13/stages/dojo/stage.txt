@@ -1,0 +1,3 @@
+name=Dojo
+sky=3A6EA5
+ground=6B4423

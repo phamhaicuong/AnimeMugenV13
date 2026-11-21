@@ -1,0 +1,5 @@
+name=Dark Ninja
+color=9B30FF
+hp=800
+power=11
+speed=4
