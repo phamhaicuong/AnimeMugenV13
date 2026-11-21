@@ -1,21 +1,10 @@
-name: Build PSP EBOOT
-on: [push, workflow_dispatch]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    container: ghcr.io/pspdev/pspdev:latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Build
-        run: make
       - name: Package
         run: |
           D=dist/PSP/GAME/AnimeMugenV13
           mkdir -p $D
           cp EBOOT.PBP $D/
           cp -r characters stages $D/
-          cd dist && zip -r ../AnimeMugenV13.zip PSP
       - uses: actions/upload-artifact@v4
         with:
           name: AnimeMugenV13
-          path: AnimeMugenV13.zip
+          path: dist
