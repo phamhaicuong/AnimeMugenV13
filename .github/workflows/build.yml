@@ -1,3 +1,13 @@
+name: Build PSP EBOOT
+on: [push, workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: ghcr.io/pspdev/pspdev:latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: make
       - name: Package
         run: |
           D=dist/PSP/GAME/AnimeMugenV13
